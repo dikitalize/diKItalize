@@ -3,107 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="KI-Automatisierung für kleine und mittlere Handwerksbetriebe" />
-  <title>diKItalize - KI für dein Handwerk</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>diKItalize – KI für Handwerksbetriebe</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #000;
       color: #fff;
+      line-height: 1.6;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
+    header, section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
       margin: auto;
     }
     h1, h2, h3 {
       color: #fff;
-      margin-bottom: 20px;
+      margin-bottom: 1rem;
     }
-    .highlight {
+    .ki {
       color: #888;
-      font-weight: 800;
     }
-    .btn {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .cta {
+      display: inline-block;
+      padding: 1rem 2rem;
       background: #fff;
       color: #000;
-      padding: 15px 25px;
-      border: none;
-      font-weight: bold;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    .hero {
-      text-align: center;
-      padding-top: 100px;
-    }
-    .two-columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      margin-top: 40px;
-    }
-    .two-columns > div {
-      flex: 1 1 45%;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
     }
     footer {
+      background: #111;
       text-align: center;
-      padding: 40px 20px;
-      font-size: 14px;
-      color: #666;
+      padding: 2rem;
+      font-size: 0.9rem;
     }
-    @media (max-width: 768px) {
-      .two-columns {
-        flex-direction: column;
-      }
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background: #111;
+      color: #fff;
+      border: 1px solid #333;
+      border-radius: 4px;
+    }
+    button {
+      padding: 1rem 2rem;
+      background: #fff;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Willkommen bei <span class="ki">diKItalize</span></h1>
+    <p>Wir automatisieren dein Handwerk mit <span class="ki">KI</span> – einfach, effizient und praxiserprobt.</p>
+    <a class="cta" href="#kontakt">Kostenloses Erstgespräch</a>
+  </header>
 
-  <section class="hero">
-    <h1>Willkommen bei <span class="highlight">diKItalize</span></h1>
-    <p>Wir automatisieren dein Handwerk mit <span class="highlight">KI</span> – einfach, effizient und praxisnah.</p>
-    <button class="btn">Kostenloses Erstgespräch vereinbaren</button>
-  </section>
-
-  <section>
+  <section id="leistungen">
     <h2>Unsere Leistungen</h2>
-    <div class="two-columns">
+    <div class="grid">
       <div>
-        <h3><span class="highlight">KI</span> Workflow Automatisierung</h3>
-        <p>Wir analysieren deine Prozesse und setzen intelligente Automatisierungen mit n8n um. Von Angebotserstellung bis Lagerverwaltung: Deine Abläufe laufen effizienter – rund um die Uhr.</p>
+        <h3><span class="ki">KI</span> Workflow Automatisierung</h3>
+        <p>Von Angebots-Erstellung über Lagerverwaltung bis zu Kundenkommunikation – wir automatisieren deine Prozesse mit n8n und intelligenten KI-Tools.</p>
       </div>
       <div>
-        <h3><span class="highlight">KI</span> Call Agents</h3>
-        <p>Digitale Assistenten für dein Telefon: Unsere Call Agents beantworten Kundenfragen, nehmen Aufträge auf und entlasten dein Team – mit perfektem Handwerker-Verständnis.</p>
+        <h3><span class="ki">KI</span> Call Agents</h3>
+        <p>Unsere virtuellen Assistenten beantworten Anrufe, nehmen Aufträge entgegen und entlasten dein Team – mit perfekt abgestimmtem Handwerks-Verständnis.</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Warum <span class="highlight">diKItalize</span>?</h2>
+  <section id="vorteile">
+    <h2>Deine Vorteile</h2>
     <ul>
-      <li>Echte Lösungen für echte Handwerksbetriebe</li>
-      <li>Schnelle Umsetzung – ohne Tech-Kauderwelsch</li>
-      <li>Persönlich, ehrlich und lokal aus Nordhessen</li>
+      <li>⏱️ Schnelle Umsetzung – ohne Tech-Kauderwelsch</li>
+      <li>💡 Klare Lösungen statt leere Buzzwords</li>
+      <li>🤝 Persönlich & lokal aus Nordhessen</li>
+      <li>🔁 Laufende Optimierung deiner Prozesse</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Bereit für die <span class="highlight">KI</span>-Zukunft?</h2>
-    <p>Starte jetzt mit deinem kostenlosen Erstgespräch und finde heraus, wie <span class="highlight">KI</span> deinen Betrieb nach vorne bringt.</p>
-    <button class="btn">Jetzt Termin buchen</button>
+  <section id="ueber-uns">
+    <h2>Über uns</h2>
+    <p>Wir sind Tech-Profis mit Handwerks-Herz. Aus Nordhessen. Unsere Mission: Kleine und mittlere Handwerksbetriebe durch <span class="ki">KI</span>-gestützte Automatisierung zukunftssicher aufstellen. Kein BlaBla, kein Konzernsprech – sondern Tools, die wirklich funktionieren.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" name="name" placeholder="Dein Name" required>
+      <input type="email" name="email" placeholder="Deine E-Mail" required>
+      <textarea name="nachricht" rows="5" placeholder="Deine Nachricht" required></textarea>
+      <button type="submit">Nachricht senden</button>
+    </form>
   </section>
 
   <footer>
     <p>&copy; 2025 diKItalize | Impressum | Datenschutz</p>
   </footer>
-
 </body>
 </html>
-
