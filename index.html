@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -45,14 +46,14 @@
         .logo {
             font-size: 28px;
             font-weight: 800;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .cta-button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
             color: white;
             padding: 12px 30px;
             border-radius: 25px;
@@ -65,7 +66,7 @@
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 10px 25px rgba(14, 165, 233, 0.4);
         }
 
         /* Hero Section */
@@ -73,7 +74,7 @@
             margin-top: 100px;
             padding: 80px 0;
             text-align: center;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
         }
 
         .hero h1 {
@@ -81,11 +82,11 @@
             font-weight: 800;
             margin-bottom: 20px;
             line-height: 1.2;
-            color: #1a1a1a;
+            color: #1e293b;
         }
 
         .hero .highlight {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -93,7 +94,7 @@
 
         .hero p {
             font-size: 22px;
-            color: #555;
+            color: #475569;
             margin-bottom: 40px;
             max-width: 800px;
             margin-left: auto;
@@ -111,7 +112,7 @@
             font-size: 42px;
             font-weight: 700;
             margin-bottom: 60px;
-            color: #1a1a1a;
+            color: #1e293b;
         }
 
         .features-grid {
@@ -123,14 +124,16 @@
 
         .feature-card {
             padding: 40px;
-            background: #f8f9fa;
+            background: #F8FAFC;
             border-radius: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #E2E8F0;
         }
 
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(14, 165, 233, 0.15);
+            border-color: #0EA5E9;
         }
 
         .feature-icon {
@@ -141,18 +144,18 @@
         .feature-card h3 {
             font-size: 24px;
             margin-bottom: 15px;
-            color: #1a1a1a;
+            color: #1e293b;
         }
 
         .feature-card p {
-            color: #666;
+            color: #64748b;
             line-height: 1.8;
         }
 
         /* Use Cases */
         .use-cases {
             padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
             color: white;
         }
 
@@ -162,7 +165,7 @@
 
         .use-cases-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
 
@@ -219,9 +222,10 @@
             min-width: 200px;
             text-align: center;
             padding: 30px 20px;
-            background: #f8f9fa;
+            background: #F8FAFC;
             border-radius: 15px;
             position: relative;
+            border: 1px solid #E2E8F0;
         }
 
         .journey-step:not(:last-child):after {
@@ -231,13 +235,13 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 30px;
-            color: #667eea;
+            color: #0EA5E9;
         }
 
         .step-number {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
             color: white;
             border-radius: 50%;
             display: flex;
@@ -256,7 +260,7 @@
         /* Testimonials */
         .testimonials {
             padding: 80px 0;
-            background: #f8f9fa;
+            background: #F8FAFC;
         }
 
         .testimonials-grid {
@@ -270,30 +274,72 @@
             background: white;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 20px rgba(14, 165, 233, 0.08);
+            border: 1px solid #E2E8F0;
         }
 
         .testimonial-text {
             font-style: italic;
-            color: #555;
+            color: #475569;
             margin-bottom: 20px;
             line-height: 1.8;
         }
 
         .testimonial-author {
             font-weight: 600;
-            color: #1a1a1a;
+            color: #1e293b;
         }
 
         .testimonial-role {
-            color: #888;
+            color: #94a3b8;
             font-size: 14px;
+        }
+
+        /* Images */
+        .hero-image {
+            margin-top: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(14, 165, 233, 0.2);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .stats-section {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 48px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            color: #64748b;
+            font-size: 16px;
         }
 
         /* CTA Section */
         .final-cta {
             padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
             color: white;
             text-align: center;
         }
@@ -311,12 +357,17 @@
 
         .cta-button.secondary {
             background: white;
-            color: #667eea;
+            color: #0EA5E9;
+        }
+
+        .cta-button.secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
         }
 
         /* Footer */
         footer {
-            background: #1a1a1a;
+            background: #0f172a;
             color: white;
             padding: 40px 0;
             text-align: center;
@@ -349,11 +400,76 @@
         </nav>
     </header>
 
+    <!-- Cal.com Inline Widget -->
+    <div id="cal-inline" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; align-items: center; justify-content: center;">
+        <div style="position: relative; width: 90%; max-width: 900px; height: 90%; background: white; border-radius: 20px; overflow: hidden;">
+            <button onclick="closeCal()" style="position: absolute; top: 20px; right: 20px; background: #EF4444; color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 20px; z-index: 10001;">×</button>
+            <div id="cal-embed"></div>
+        </div>
+    </div>
+
+    <script>
+        function openCal() {
+            document.getElementById('cal-inline').style.display = 'flex';
+            // Cal.com wird hier initialisiert - ersetze 'dein-username' mit deinem Cal.com Username
+            if (typeof Cal === 'undefined') {
+                const script = document.createElement('script');
+                script.src = 'https://app.cal.com/embed/embed.js';
+                script.onload = function() {
+                    Cal("inline", {
+                        elementOrSelector: "#cal-embed",
+                        calLink: "dikitalize/demo", 
+                        layout: "month_view"
+                    });
+                };
+                document.head.appendChild(script);
+            }
+        }
+
+        function closeCal() {
+            document.getElementById('cal-inline').style.display = 'none';
+        }
+
+        // Update all links to open Cal.com
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaButtons = document.querySelectorAll('a[href="#kontakt"]');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openCal();
+                });
+            });
+        });
+    </script>
+
     <section class="hero">
         <div class="container">
             <h1>KI-Telefon-Assistent für <span class="highlight">Handwerk & Kleinunternehmen</span></h1>
             <p>Automatisiere deine Telefonie mit KI: Beantworte Kundenanrufe, qualifiziere Leads und vereinbare Termine – 24/7, ohne Wartezeit.</p>
-            <a href="#kontakt" class="cta-button">Jetzt kostenlos testen</a>
+            <a href="#kontakt" class="cta-button">Kostenlosen Beratungstermin vereinbaren</a>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Erreichbarkeit</p>
+                </div>
+                <div class="stat-item">
+                    <h3>95%</h3>
+                    <p>Terminquote</p>
+                </div>
+                <div class="stat-item">
+                    <h3>0</h3>
+                    <p>Verpasste Anrufe</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3x</h3>
+                    <p>Mehr qualifizierte Leads</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -400,21 +516,30 @@
             <h2 class="section-title">Perfekt für deine Branche</h2>
             <div class="use-cases-grid">
                 <div class="use-case">
-                    <h3>🦷 Zahnarztpraxen</h3>
-                    <ul>
-                        <li>Erinnerung an Kontrolltermine</li>
-                        <li>Zahnreinigung alle 6 Monate</li>
-                        <li>Terminbestätigung 24h vorher</li>
-                        <li>Notfall-Hotline außerhalb der Sprechzeiten</li>
-                    </ul>
-                </div>
-                <div class="use-case">
                     <h3>🔧 Handwerksbetriebe</h3>
                     <ul>
                         <li>Anfragen entgegennehmen</li>
                         <li>Erstberatung durchführen</li>
                         <li>Besichtigungstermine vereinbaren</li>
                         <li>Wartungserinnerungen versenden</li>
+                    </ul>
+                </div>
+                <div class="use-case">
+                    <h3>🏠 Immobilienmakler</h3>
+                    <ul>
+                        <li>Lead-Qualifizierung</li>
+                        <li>Besichtigungstermine koordinieren</li>
+                        <li>Interessenten-Follow-up</li>
+                        <li>Objektanfragen bearbeiten</li>
+                    </ul>
+                </div>
+                <div class="use-case">
+                    <h3>🦷 Zahnarztpraxen</h3>
+                    <ul>
+                        <li>Erinnerung an Kontrolltermine</li>
+                        <li>Zahnreinigung alle 6 Monate</li>
+                        <li>Terminbestätigung 24h vorher</li>
+                        <li>Notfall-Hotline außerhalb der Sprechzeiten</li>
                     </ul>
                 </div>
                 <div class="use-case">
@@ -427,12 +552,21 @@
                     </ul>
                 </div>
                 <div class="use-case">
-                    <h3>🏠 Immobilienmakler</h3>
+                    <h3>💆 Wellness & Fitness</h3>
                     <ul>
-                        <li>Lead-Qualifizierung</li>
-                        <li>Besichtigungstermine koordinieren</li>
-                        <li>Interessenten-Follow-up</li>
-                        <li>Objektanfragen bearbeiten</li>
+                        <li>Spa-Terminbuchungen</li>
+                        <li>Personal Training Sessions</li>
+                        <li>Massage-Erinnerungen</li>
+                        <li>Mitgliedschafts-Follow-ups</li>
+                    </ul>
+                </div>
+                <div class="use-case">
+                    <h3>🎯 Für alle Branchen</h3>
+                    <ul>
+                        <li>24/7 Erreichbarkeit</li>
+                        <li>Keine verpassten Anrufe</li>
+                        <li>Automatische Terminbuchung</li>
+                        <li>Lead-Qualifizierung & CRM-Integration</li>
                     </ul>
                 </div>
             </div>
@@ -486,6 +620,11 @@
                     <p class="testimonial-author">Thomas Schmidt</p>
                     <p class="testimonial-role">Geschäftsführer, Auto Schmidt</p>
                 </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Lead-Qualifizierung auf einem neuen Level. Die KI filtert perfekt die ernsthaften Interessenten für unsere Immobilien heraus."</p>
+                    <p class="testimonial-author">Julia Hoffmann</p>
+                    <p class="testimonial-role">Maklerin, Hoffmann Immobilien</p>
+                </div>
             </div>
         </div>
     </section>
@@ -494,7 +633,7 @@
         <div class="container">
             <h2>Bereit, deine Telefonie zu automatisieren?</h2>
             <p>Starte noch heute mit deinem KI-Telefon-Assistenten</p>
-            <a href="#kontakt" class="cta-button secondary">Kostenlose Demo buchen</a>
+            <a href="#kontakt" class="cta-button secondary">Kostenlosen Beratungstermin vereinbaren</a>
         </div>
     </section>
 
@@ -506,3 +645,4 @@
     </footer>
 </body>
 </html>
+        
