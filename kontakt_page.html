@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - diKItalize</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 150px auto 80px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #0EA5E9;
+            text-decoration: none;
+            font-weight: 600;
+            grid-column: 1 / -1;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(14, 165, 233, 0.1);
+        }
+
+        .contact-info h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .contact-info p {
+            color: #475569;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            min-width: 30px;
+        }
+
+        .contact-item h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+
+        .contact-item a {
+            color: #0EA5E9;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(14, 165, 233, 0.1);
+        }
+
+        .contact-form h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #1e293b;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #E2E8F0;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0EA5E9;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(14, 165, 233, 0.4);
+        }
+
+        .cal-cta {
+            margin-top: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        .cal-cta h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .cal-cta p {
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .cal-btn {
+            background: white;
+            color: #0EA5E9;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .cal-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #0EA5E9;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">diKItalize</a>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+        
+        <div class="contact-info">
+            <h1>Kontaktiere uns</h1>
+            <p>Hast du Fragen zu diKItalize? Wir helfen dir gerne weiter. Nutze das Kontaktformular oder kontaktiere uns direkt.</p>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h3>E-Mail</h3>
+                        <a href="mailto:info@dikitalize.de">info@dikitalize.de</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h3>Telefon</h3>
+                        <a href="tel:+4956823068770">+49 5682 3068770</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h3>Adresse</h3>
+                        <p style="color: #475569; margin: 0;">
+                            Nebelbeekenweb 10<br>
+                            34379 Calden<br>
+                            Deutschland
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cal-cta">
+                <h3>Lieber direkt einen Termin buchen?</h3>
+                <p>Vereinbare jetzt deinen kostenlosen Beratungstermin</p>
+                <a href="https://cal.com/dikitalize/demo" class="cal-btn" target="_blank">Termin vereinbaren</a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Schreib uns eine Nachricht</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="max@beispiel.de">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+49 123 456 7890">
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Unternehmen</label>
+                    <input type="text" id="company" name="company" placeholder="Dein Unternehmen">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Nachricht *</label>
+                    <textarea id="message" name="message" required placeholder="Wie können wir dir helfen?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Nachricht senden</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="agb.html">AGB</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <p style="margin-top: 20px;">&copy; 2025 diKItalize. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
