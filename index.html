@@ -333,6 +333,56 @@
             box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
         }
 
+        .why-dikitalize {
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            padding: 60px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .why-dikitalize h3 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .why-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .why-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .why-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .why-item h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .why-item p {
+            font-size: 15px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
         /* Images */
         .hero-image {
             margin-top: 40px;
@@ -514,6 +564,14 @@
                 font-size: 18px;
             }
 
+            .cta-button {
+                font-size: 14px;
+                padding: 12px 20px;
+                white-space: normal;
+                text-align: center;
+                line-height: 1.4;
+            }
+
             .journey-step:not(:last-child):after {
                 display: none;
             }
@@ -521,13 +579,33 @@
             .journey-steps {
                 flex-direction: column;
             }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .automation-cta {
+                padding: 40px 30px;
+            }
+
+            .automation-cta h3 {
+                font-size: 24px;
+            }
+
+            .automation-cta p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">diKItalize</div>
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                    <span>di</span><span>KI</span><span>t</span><span>a</span><span>l</span><span>i</span><span>z</span><span>e</span><span>.</span>
+                </div>
+            </a>
             <a href="#kontakt" class="cta-button">Demo vereinbaren</a>
         </nav>
     </header>
@@ -607,7 +685,7 @@
 
     <section class="features">
         <div class="container">
-            <h2 class="section-title">Telefonie-Automatisierung: Dein Einstieg in die digitale Transformation</h2>
+            <h2 class="section-title" id="features">Telefonie-Automatisierung: Dein Einstieg in die digitale Transformation</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; color: #475569; font-size: 18px;">
                 Beginne mit der Automatisierung deiner Telefonie – der schnellste Weg zu spürbaren Ergebnissen und ROI.
             </p>
@@ -624,23 +702,23 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📅</div>
-                    <h3>Automatische Terminvereinbarung</h3>
+                    <h3>Terminmanagement</h3>
                     <p>Erinnerungsanrufe für wiederkehrende Termine: Zahnreinigung, Reifenwechsel, Wartungen – die KI erinnert Kunden und bucht Termine direkt in deinen Kalender.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💬</div>
-                    <h3>Natürliche Gespräche</h3>
-                    <p>Modernste KI-Technologie ermöglicht Gespräche, die sich echt anfühlen. Deine Kunden merken kaum, dass sie mit einer KI sprechen.</p>
+                    <h3>Natürliche KI-Gespräche</h3>
+                    <p>Modernste Sprach-KI ermöglicht natürliche Dialoge. Deine Kunden erleben professionelle Gespräche, die sich echt anfühlen.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔄</div>
-                    <h3>Nahtlose Integration</h3>
-                    <p>Verbindung mit deinem CRM, Kalender und bestehenden Systemen. Alle Informationen werden automatisch synchronisiert.</p>
+                    <h3>System-Integration</h3>
+                    <p>Automatische Anbindung an dein CRM, Kalender, E-Mail und alle bestehenden Systeme. Daten fließen in Echtzeit.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>Volle Transparenz</h3>
-                    <p>Dashboard mit allen Anrufen, Terminen und Kennzahlen. Du behältst immer den Überblick über deine Kundenkommunikation.</p>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Live-Dashboard mit allen Anruf-Metriken, Terminquoten und KPIs. Vollständige Transparenz über deine Performance.</p>
                 </div>
             </div>
         </div>
@@ -648,7 +726,7 @@
 
     <section class="use-cases">
         <div class="container">
-            <h2 class="section-title">Perfekt für deine Branche</h2>
+            <h2 class="section-title" id="branchen">Perfekt für deine Branche</h2>
             <div class="use-cases-grid">
                 <div class="use-case">
                     <h3>🔧 Handwerksbetriebe</h3>
@@ -738,7 +816,7 @@
 
     <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">Mehr als nur Telefonie – Ganzheitliche Automatisierung</h2>
+            <h2 class="section-title" id="automatisierung">Mehr als nur Telefonie – Ganzheitliche Automatisierung</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; color: #475569; font-size: 18px;">
                 Nach der erfolgreichen Automatisierung deiner Telefonie geht es weiter: Wir automatisieren deine gesamten Geschäftsprozesse mit KI-Agenten.
             </p>
@@ -781,9 +859,40 @@
                 </div>
             </div>
 
-            <div class="automation-cta">
-                <h3>Von der Telefonie zur vollständigen Automatisierung</h3>
-                <p>Die Telefonie-Automatisierung ist dein Einstieg. Danach automatisieren wir Schritt für Schritt deine gesamten Prozesse – abgestimmt auf dein Tempo und deine Bedürfnisse.</p>
+            <div class="why-dikitalize">
+                <h3>Warum diKItalize?</h3>
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-icon">🎯</div>
+                        <h4>Ganzheitlicher Ansatz</h4>
+                        <p>Von der Telefonie-Automatisierung bis zur vollständigen Prozessautomatisierung – alles aus einer Hand.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">💡</div>
+                        <h4>Individuelle Lösungen</h4>
+                        <p>Keine Standard-Software. Wir entwickeln maßgeschneiderte Lösungen für deine spezifischen Geschäftsprozesse.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">⚡</div>
+                        <h4>Schnelle Umsetzung</h4>
+                        <p>Erste Ergebnisse in Wochen, nicht Monaten. Starte klein und skaliere nach Bedarf.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">🤝</div>
+                        <h4>Persönliche Betreuung</h4>
+                        <p>Direkter Draht zu uns – kein anonymer Support. Wir begleiten dich vom ersten Gespräch bis zum erfolgreichen Betrieb.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">🔒</div>
+                        <h4>Datenschutz & Sicherheit</h4>
+                        <p>DSGVO-konforme Lösungen, gehostet in Deutschland. Deine Daten bleiben deine Daten.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">📈</div>
+                        <h4>Messbarer ROI</h4>
+                        <p>Transparente Erfolgsmessung. Du siehst genau, wie viel Zeit und Geld du sparst.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
