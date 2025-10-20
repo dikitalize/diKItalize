@@ -263,36 +263,74 @@
             background: #F8FAFC;
         }
 
-        .testimonials-grid {
+        .automation-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-top: 60px;
+            margin-bottom: 60px;
         }
 
-        .testimonial {
+        .automation-card {
             background: white;
-            padding: 30px;
+            padding: 40px;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(14, 165, 233, 0.08);
             border: 1px solid #E2E8F0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .testimonial-text {
-            font-style: italic;
-            color: #475569;
+        .automation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15);
+            border-color: #0EA5E9;
+        }
+
+        .automation-icon {
+            font-size: 48px;
             margin-bottom: 20px;
-            line-height: 1.8;
         }
 
-        .testimonial-author {
-            font-weight: 600;
+        .automation-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
             color: #1e293b;
         }
 
-        .testimonial-role {
-            color: #94a3b8;
-            font-size: 14px;
+        .automation-card p {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .automation-cta {
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            padding: 60px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .automation-cta h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .automation-cta p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .automation-cta .cta-button {
+            background: white;
+            color: #0EA5E9;
+        }
+
+        .automation-cta .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
         }
 
         /* Images */
@@ -369,8 +407,102 @@
         footer {
             background: #0f172a;
             color: white;
-            padding: 40px 0;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #94a3b8;
+            text-decoration: none;
+            line-height: 2;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: #0EA5E9;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 30px;
             text-align: center;
+            color: #64748b;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #0EA5E9;
+        }
+
+        /* Legal Pages */
+        .legal-page {
+            max-width: 800px;
+            margin: 150px auto 80px;
+            padding: 0 20px;
+        }
+
+        .legal-page h1 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #1e293b;
+        }
+
+        .legal-page h2 {
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .legal-page p {
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .legal-page a {
+            color: #0EA5E9;
+            text-decoration: none;
+        }
+
+        .legal-page a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #0EA5E9;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
@@ -444,8 +576,8 @@
 
     <section class="hero">
         <div class="container">
-            <h1>KI-Telefon-Assistent für <span class="highlight">Handwerk & Kleinunternehmen</span></h1>
-            <p>Automatisiere deine Telefonie mit KI: Beantworte Kundenanrufe, qualifiziere Leads und vereinbare Termine – 24/7, ohne Wartezeit.</p>
+            <h1>KI-Telefon-Assistent & <span class="highlight">Prozessautomatisierung</span></h1>
+            <p>Starte mit intelligenter Telefonie-Automatisierung und skaliere zu vollständiger Geschäftsprozess-Automatisierung mit KI-Agenten – alles aus einer Hand.</p>
             <a href="#kontakt" class="cta-button">Kostenlosen Beratungstermin vereinbaren</a>
         </div>
     </section>
@@ -475,7 +607,10 @@
 
     <section class="features">
         <div class="container">
-            <h2 class="section-title">Wie diKItalize dein Geschäft revolutioniert</h2>
+            <h2 class="section-title">Telefonie-Automatisierung: Dein Einstieg in die digitale Transformation</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; color: #475569; font-size: 18px;">
+                Beginne mit der Automatisierung deiner Telefonie – der schnellste Weg zu spürbaren Ergebnissen und ROI.
+            </p>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📞</div>
@@ -603,46 +738,101 @@
 
     <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">Was unsere Kunden sagen</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <p class="testimonial-text">"Seit wir diKItalize nutzen, verpassen wir keinen Anruf mehr. Die KI vereinbart Termine, während ich beim Kunden bin. Genial!"</p>
-                    <p class="testimonial-author">Martin Weber</p>
-                    <p class="testimonial-role">Inhaber, Elektro Weber GmbH</p>
+            <h2 class="section-title">Mehr als nur Telefonie – Ganzheitliche Automatisierung</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; color: #475569; font-size: 18px;">
+                Nach der erfolgreichen Automatisierung deiner Telefonie geht es weiter: Wir automatisieren deine gesamten Geschäftsprozesse mit KI-Agenten.
+            </p>
+            
+            <div class="automation-grid">
+                <div class="automation-card">
+                    <div class="automation-icon">🤖</div>
+                    <h3>KI-Agenten für jeden Prozess</h3>
+                    <p>Unsere intelligenten KI-Agenten übernehmen repetitive Aufgaben in allen Bereichen deines Unternehmens – von der Buchhaltung bis zum Marketing.</p>
                 </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">"Unsere Patienten sind begeistert von den automatischen Erinnerungsanrufen. Die Terminausfälle haben sich um 60% reduziert."</p>
-                    <p class="testimonial-author">Dr. Sarah Müller</p>
-                    <p class="testimonial-role">Zahnärztin, Praxis Dr. Müller</p>
+                
+                <div class="automation-card">
+                    <div class="automation-icon">🔄</div>
+                    <h3>Workflow-Automatisierung</h3>
+                    <p>Verbinde alle deine Tools und Systeme. Aufgaben werden automatisch weitergeleitet, Daten synchronisiert und Prozesse nahtlos orchestriert.</p>
                 </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">"Die Reifenwechsel-Erinnerungen im Frühjahr und Herbst sind Gold wert. Unsere Kunden kommen jetzt automatisch zu uns zurück."</p>
-                    <p class="testimonial-author">Thomas Schmidt</p>
-                    <p class="testimonial-role">Geschäftsführer, Auto Schmidt</p>
+                
+                <div class="automation-card">
+                    <div class="automation-icon">📊</div>
+                    <h3>Datenintegration & Synchronisation</h3>
+                    <p>Automatischer Datenaustausch zwischen CRM, ERP, E-Mail, Kalender und allen anderen Systemen – ohne manuelle Eingaben.</p>
                 </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">"Lead-Qualifizierung auf einem neuen Level. Die KI filtert perfekt die ernsthaften Interessenten für unsere Immobilien heraus."</p>
-                    <p class="testimonial-author">Julia Hoffmann</p>
-                    <p class="testimonial-role">Maklerin, Hoffmann Immobilien</p>
+                
+                <div class="automation-card">
+                    <div class="automation-icon">✉️</div>
+                    <h3>E-Mail & Kommunikations-Automation</h3>
+                    <p>KI-gestützte E-Mail-Verarbeitung, automatische Antworten, intelligente Weiterleitung und Follow-up-Kampagnen.</p>
                 </div>
+                
+                <div class="automation-card">
+                    <div class="automation-icon">📝</div>
+                    <h3>Dokumenten-Automatisierung</h3>
+                    <p>Automatische Erstellung, Verarbeitung und Archivierung von Angeboten, Rechnungen, Verträgen und anderen Dokumenten.</p>
+                </div>
+                
+                <div class="automation-card">
+                    <div class="automation-icon">⚡</div>
+                    <h3>Custom Solutions</h3>
+                    <p>Individuelle Automatisierungslösungen, die exakt auf deine Geschäftsprozesse und Anforderungen zugeschnitten sind.</p>
+                </div>
+            </div>
+
+            <div class="automation-cta">
+                <h3>Von der Telefonie zur vollständigen Automatisierung</h3>
+                <p>Die Telefonie-Automatisierung ist dein Einstieg. Danach automatisieren wir Schritt für Schritt deine gesamten Prozesse – abgestimmt auf dein Tempo und deine Bedürfnisse.</p>
             </div>
         </div>
     </section>
 
     <section class="final-cta">
         <div class="container">
-            <h2>Bereit, deine Telefonie zu automatisieren?</h2>
-            <p>Starte noch heute mit deinem KI-Telefon-Assistenten</p>
+            <h2>Bereit für die digitale Transformation?</h2>
+            <p>Starte mit Telefonie-Automatisierung und wachse zu vollständiger Prozessautomatisierung</p>
             <a href="#kontakt" class="cta-button secondary">Kostenlosen Beratungstermin vereinbaren</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 diKItalize. Alle Rechte vorbehalten.</p>
-            <p style="margin-top: 10px; opacity: 0.7;">KI-gestützte Telefonie für Handwerk & Kleinunternehmen</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>diKItalize</h3>
+                    <p>KI-Telefonie & Prozessautomatisierung für Handwerk & Kleinunternehmen</p>
+                    <p style="margin-top: 20px;">
+                        <strong>Kontakt:</strong><br>
+                        Daniel Schmuch<br>
+                        Nebelbeekenweb 10<br>
+                        34379 Calden<br>
+                        <a href="mailto:info@dikitalize.de">info@dikitalize.de</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="agb.html">AGB</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <a href="kontakt.html">Kontaktformular</a>
+                    <a href="mailto:info@dikitalize.de">E-Mail</a>
+                    <a href="tel:+4956823068770">+49 5682 3068770</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="agb.html">AGB</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <p>&copy; 2025 diKItalize. Alle Rechte vorbehalten.</p>
+            </div>
         </div>
     </footer>
 </body>
 </html>
-        
