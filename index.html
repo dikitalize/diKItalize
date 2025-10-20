@@ -111,8 +111,31 @@
             text-align: center;
             font-size: 42px;
             font-weight: 700;
-            margin-bottom: 60px;
+            margin-bottom: 30px;
             color: #1e293b;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .stat-item h3 {
+            font-size: 48px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            color: #64748b;
+            font-size: 16px;
         }
 
         .features-grid {
@@ -226,16 +249,6 @@
             border-radius: 15px;
             position: relative;
             border: 1px solid #E2E8F0;
-        }
-
-        .journey-step:not(:last-child):after {
-            content: "→";
-            position: absolute;
-            right: -30px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 30px;
-            color: #0EA5E9;
         }
 
         .step-number {
@@ -397,33 +410,6 @@
             display: block;
         }
 
-        .stats-section {
-            padding: 60px 0;
-            background: white;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            text-align: center;
-        }
-
-        .stat-item h3 {
-            font-size: 48px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 10px;
-        }
-
-        .stat-item p {
-            color: #64748b;
-            font-size: 16px;
-        }
-
         /* CTA Section */
         .final-cta {
             padding: 80px 0;
@@ -572,10 +558,6 @@
                 line-height: 1.4;
             }
 
-            .journey-step:not(:last-child):after {
-                display: none;
-            }
-
             .journey-steps {
                 flex-direction: column;
             }
@@ -626,8 +608,13 @@
         </div>
     </section>
 
-    <section class="stats-section">
+    <section class="features">
         <div class="container">
+            <h2 class="section-title" id="features">Telefonie-Automatisierung: Dein Einstieg in die digitale Transformation</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 20px; color: #475569; font-size: 18px;">
+                Beginne mit der Automatisierung deiner Telefonie – der schnellste Weg zu spürbaren Ergebnissen und ROI.
+            </p>
+            
             <div class="stats-grid">
                 <div class="stat-item">
                     <h3>24/7</h3>
@@ -642,15 +629,7 @@
                     <p>Kundenzufriedenheit</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title" id="features">Telefonie-Automatisierung: Dein Einstieg in die digitale Transformation</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; color: #475569; font-size: 18px;">
-                Beginne mit der Automatisierung deiner Telefonie – der schnellste Weg zu spürbaren Ergebnissen und ROI.
-            </p>
+            
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📞</div>
@@ -771,6 +750,11 @@
                     <div class="step-number">4</div>
                     <h4>Termin gebucht</h4>
                     <p>Direkt in deinem Kalender – fertig!</p>
+                </div>
+                <div class="journey-step">
+                    <div class="step-number">5</div>
+                    <h4>Detaillierte Protokolle</h4>
+                    <p>Du erhältst automatisch eine E-Mail-Zusammenfassung mit allen wichtigen Gesprächsinhalten</p>
                 </div>
             </div>
         </div>
