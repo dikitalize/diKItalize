@@ -69,36 +69,124 @@
             box-shadow: 0 10px 25px rgba(14, 165, 233, 0.4);
         }
 
-        /* Contact Form Section */
+        /* Contact Section */
         .contact-section {
             margin-top: 120px;
             padding: 60px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /* Left Side - Contact Info */
+        .contact-info {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(14, 165, 233, 0.15);
+        }
+
+        .contact-info h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .contact-info .subtitle {
+            color: #64748b;
+            margin-bottom: 40px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 30px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .contact-details h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #1e293b;
+        }
+
+        .contact-details p,
+        .contact-details a {
+            color: #0EA5E9;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .cta-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .cta-box p {
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+
+        .cta-box .cta-button {
+            background: white;
+            color: #0EA5E9;
+            padding: 14px 35px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-box .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Right Side - Form */
         .form-container {
             background: white;
             padding: 50px;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(14, 165, 233, 0.15);
-            max-width: 600px;
-            width: 100%;
         }
 
-        .form-container h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+        .form-container h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
             color: #1e293b;
-            text-align: center;
-        }
-
-        .form-container .subtitle {
-            text-align: center;
-            color: #64748b;
-            margin-bottom: 40px;
-            font-size: 18px;
         }
 
         .form-group {
@@ -213,12 +301,18 @@
             color: #0EA5E9;
         }
 
-        @media (max-width: 768px) {
-            .form-container {
+        @media (max-width: 968px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-container,
+            .contact-info {
                 padding: 30px 20px;
             }
 
-            .form-container h1 {
+            .form-container h2,
+            .contact-info h1 {
                 font-size: 28px;
             }
 
@@ -236,56 +330,99 @@
         </nav>
     </header>
 
+    <!-- Cal.com embed code -->
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "beratung", {origin:"https://app.cal.com"});
+    Cal.ns.beratung("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
+
     <section class="contact-section">
-        <div class="form-container">
-            <h1>Schreib uns eine Nachricht</h1>
-            <p class="subtitle">Wir melden uns innerhalb von 24 Stunden bei dir</p>
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left Side - Contact Info -->
+                <div>
+                    <div class="contact-info">
+                        <h1>Kontaktiere uns</h1>
+                        <p class="subtitle">Hast du Fragen zu diKItalize? Wir helfen dir gerne weiter. Nutze das Kontaktformular oder kontaktiere uns direkt.</p>
 
-            <div id="success-message" class="success-message">
-                ✓ Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>E-Mail</h3>
+                                <a href="mailto:info@dikitalize.de">info@dikitalize.de</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Telefon</h3>
+                                <a href="tel:+4917624043211">+49 176 24043211</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Adresse</h3>
+                                <p>Nebelbeekenweg 10<br>34379 Calden<br>Deutschland</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-box">
+                        <h3>Lieber direkt einen Termin buchen?</h3>
+                        <p>Vereinbare jetzt deinen kostenlosen Beratungstermin</p>
+                        <a href="#" class="cta-button" data-cal-namespace="beratung" data-cal-link="dikitalize/beratung" data-cal-config='{"layout":"month_view"}'>Termin vereinbaren</a>
+                    </div>
+                </div>
+
+                <!-- Right Side - Form -->
+                <div class="form-container">
+                    <h2>Schreib uns eine Nachricht</h2>
+
+                    <div id="success-message" class="success-message">
+                        ✓ Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.
+                    </div>
+
+                    <div id="error-message" class="error-message">
+                        ✗ Fehler beim Senden. Bitte versuche es erneut.
+                    </div>
+
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="a1033f73-272c-4f11-bb1e-857e6e26e113">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="max@beispiel.de">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+49 123 456 7890">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Unternehmen</label>
+                            <input type="text" id="company" name="company" placeholder="Dein Unternehmen">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nachricht <span class="required">*</span></label>
+                            <textarea id="message" name="message" required placeholder="Wie können wir dir helfen?"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">Nachricht senden</button>
+                    </form>
+                </div>
             </div>
-
-            <div id="error-message" class="error-message">
-                ✗ Fehler beim Senden. Bitte versuche es erneut.
-            </div>
-
-            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Web3Forms Access Key - HIER MUSST DU DEINEN KEY EINFÜGEN -->
-                <input type="hidden" name="access_key" value="a1033f73-272c-4f11-bb1e-857e6e26e113">
-                
-                <!-- Spam-Schutz -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                
-                <!-- Redirect nach Erfolg (optional) -->
-                <input type="hidden" name="redirect" value="https://dikitalize.de/danke.html">
-
-                <div class="form-group">
-                    <label for="name">Name <span class="required">*</span></label>
-                    <input type="text" id="name" name="name" required placeholder="Dein Name">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">E-Mail <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required placeholder="deine@email.de">
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Telefon</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+49 123 456789">
-                </div>
-
-                <div class="form-group">
-                    <label for="company">Unternehmen</label>
-                    <input type="text" id="company" name="company" placeholder="Dein Unternehmen">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Nachricht <span class="required">*</span></label>
-                    <textarea id="message" name="message" required placeholder="Wie können wir dir helfen?"></textarea>
-                </div>
-
-                <button type="submit" class="submit-button">Nachricht senden</button>
-            </form>
         </div>
     </section>
 
@@ -325,7 +462,6 @@
                     errorMessage.classList.remove('show');
                     form.reset();
                     
-                    // Nachricht nach 5 Sekunden ausblenden
                     setTimeout(() => {
                         successMessage.classList.remove('show');
                     }, 5000);
