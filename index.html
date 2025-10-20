@@ -606,57 +606,23 @@
                     <span>di</span><span>KI</span><span>t</span><span>a</span><span>l</span><span>i</span><span>z</span><span>e</span><span>.</span>
                 </div>
             </a>
-            <a href="#kontakt" class="cta-button">Demo vereinbaren</a>
+            <a href="#kontakt" class="cta-button" data-cal-namespace="beratung" data-cal-link="dikitalize/beratung" data-cal-config='{"layout":"month_view"}'>Demo vereinbaren</a>
         </nav>
     </header>
 
-    <!-- Cal.com Inline Widget -->
-    <div id="cal-inline" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; align-items: center; justify-content: center;">
-        <div style="position: relative; width: 90%; max-width: 900px; height: 90%; background: white; border-radius: 20px; overflow: hidden;">
-            <button onclick="closeCal()" style="position: absolute; top: 20px; right: 20px; background: #EF4444; color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 20px; z-index: 10001;">×</button>
-            <div id="cal-embed"></div>
-        </div>
-    </div>
-
-    <script>
-        function openCal() {
-            document.getElementById('cal-inline').style.display = 'flex';
-            // Cal.com wird hier initialisiert - ersetze 'dein-username' mit deinem Cal.com Username
-            if (typeof Cal === 'undefined') {
-                const script = document.createElement('script');
-                script.src = 'https://app.cal.com/embed/embed.js';
-                script.onload = function() {
-                    Cal("inline", {
-                        elementOrSelector: "#cal-embed",
-                        calLink: "dikitalize/beratung",
-                        layout: "month_view"
-                    });
-                };
-                document.head.appendChild(script);
-            }
-        }
-
-        function closeCal() {
-            document.getElementById('cal-inline').style.display = 'none';
-        }
-
-        // Update all links to open Cal.com
-        document.addEventListener('DOMContentLoaded', function() {
-            const ctaButtons = document.querySelectorAll('a[href="#kontakt"]');
-            ctaButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    openCal();
-                });
-            });
-        });
+    <!-- Cal element-click embed code begins -->
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "beratung", {origin:"https://app.cal.com"});
+    Cal.ns.beratung("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
     </script>
+    <!-- Cal element-click embed code ends -->
 
     <section class="hero">
         <div class="container">
             <h1>KI-Telefon-Assistent & <span class="highlight">Prozessautomatisierung</span></h1>
             <p>Starte mit intelligenter Telefonie-Automatisierung und skaliere zu vollständiger Geschäftsprozess-Automatisierung mit KI-Agenten – alles aus einer Hand.</p>
-            <a href="#kontakt" class="cta-button">Kostenlosen Beratungstermin vereinbaren</a>
+            <a href="#kontakt" class="cta-button" data-cal-namespace="beratung" data-cal-link="dikitalize/beratung" data-cal-config='{"layout":"month_view"}'>Kostenlosen Beratungstermin vereinbaren</a>
         </div>
     </section>
 
@@ -665,19 +631,15 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <h3>24/7</h3>
-                    <p>Erreichbarkeit</p>
-                </div>
-                <div class="stat-item">
-                    <h3>95%</h3>
-                    <p>Terminquote</p>
+                    <p>Erreichbar</p>
                 </div>
                 <div class="stat-item">
                     <h3>0</h3>
                     <p>Verpasste Anrufe</p>
                 </div>
                 <div class="stat-item">
-                    <h3>3x</h3>
-                    <p>Mehr qualifizierte Leads</p>
+                    <h3>100%</h3>
+                    <p>Kundenzufriedenheit</p>
                 </div>
             </div>
         </div>
@@ -901,7 +863,7 @@
         <div class="container">
             <h2>Bereit für die digitale Transformation?</h2>
             <p>Starte mit Telefonie-Automatisierung und wachse zu vollständiger Prozessautomatisierung</p>
-            <a href="#kontakt" class="cta-button secondary">Kostenlosen Beratungstermin vereinbaren</a>
+            <a href="#kontakt" class="cta-button secondary" data-cal-namespace="beratung" data-cal-link="dikitalize/beratung" data-cal-config='{"layout":"month_view"}'>Kostenlosen Beratungstermin vereinbaren</a>
         </div>
     </section>
 
