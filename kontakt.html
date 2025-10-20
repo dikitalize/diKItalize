@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -14,11 +15,18 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #1e293b;
+            color: #1a1a1a;
             background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
             min-height: 100vh;
         }
 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
         header {
             padding: 20px 0;
             position: fixed;
@@ -31,9 +39,6 @@
         }
 
         nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -49,90 +54,51 @@
             text-decoration: none;
         }
 
-        .contact-container {
-            max-width: 1000px;
-            margin: 150px auto 80px;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 30px;
-            color: #0EA5E9;
+        .back-button {
+            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
-            grid-column: 1 / -1;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .back-link:hover {
-            text-decoration: underline;
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(14, 165, 233, 0.4);
         }
 
-        .contact-info {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(14, 165, 233, 0.1);
-        }
-
-        .contact-info h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-            color: #1e293b;
-        }
-
-        .contact-info p {
-            color: #475569;
-            margin-bottom: 30px;
-            line-height: 1.8;
-        }
-
-        .contact-details {
-            margin-top: 30px;
-        }
-
-        .contact-item {
+        /* Contact Form Section */
+        .contact-section {
+            margin-top: 120px;
+            padding: 60px 0;
             display: flex;
-            align-items: start;
-            margin-bottom: 25px;
+            justify-content: center;
+            align-items: center;
         }
 
-        .contact-icon {
-            font-size: 24px;
-            margin-right: 15px;
-            min-width: 30px;
-        }
-
-        .contact-item h3 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #1e293b;
-            margin-bottom: 5px;
-        }
-
-        .contact-item a {
-            color: #0EA5E9;
-            text-decoration: none;
-        }
-
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-
-        .contact-form {
+        .form-container {
             background: white;
-            padding: 40px;
+            padding: 50px;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(14, 165, 233, 0.1);
+            box-shadow: 0 20px 60px rgba(14, 165, 233, 0.15);
+            max-width: 600px;
+            width: 100%;
         }
 
-        .contact-form h2 {
-            font-size: 28px;
-            margin-bottom: 30px;
+        .form-container h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
             color: #1e293b;
+            text-align: center;
+        }
+
+        .form-container .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 40px;
+            font-size: 18px;
         }
 
         .form-group {
@@ -144,23 +110,25 @@
             margin-bottom: 8px;
             font-weight: 600;
             color: #1e293b;
+            font-size: 16px;
         }
 
         .form-group input,
         .form-group textarea {
             width: 100%;
-            padding: 12px 15px;
+            padding: 15px;
             border: 2px solid #E2E8F0;
             border-radius: 10px;
             font-size: 16px;
             font-family: inherit;
-            transition: border-color 0.3s ease;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: #0EA5E9;
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
         }
 
         .form-group textarea {
@@ -168,150 +136,142 @@
             resize: vertical;
         }
 
-        .submit-btn {
+        .required {
+            color: #ef4444;
+        }
+
+        .submit-button {
+            width: 100%;
             background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
             color: white;
-            padding: 15px 40px;
+            padding: 16px;
             border: none;
-            border-radius: 25px;
-            font-size: 16px;
+            border-radius: 10px;
+            font-size: 18px;
             font-weight: 600;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 100%;
         }
 
-        .submit-btn:hover {
+        .submit-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(14, 165, 233, 0.4);
         }
 
-        .cal-cta {
-            margin-top: 30px;
-            padding: 30px;
-            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
-            border-radius: 15px;
-            text-align: center;
+        .submit-button:active {
+            transform: translateY(0);
+        }
+
+        .success-message {
+            display: none;
+            background: #10b981;
             color: white;
-        }
-
-        .cal-cta h3 {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-
-        .cal-cta p {
+            padding: 15px;
+            border-radius: 10px;
             margin-bottom: 20px;
-            opacity: 0.9;
+            text-align: center;
         }
 
-        .cal-btn {
-            background: white;
-            color: #0EA5E9;
-            padding: 12px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            transition: transform 0.3s ease;
+        .success-message.show {
+            display: block;
         }
 
-        .cal-btn:hover {
-            transform: translateY(-2px);
+        .error-message {
+            display: none;
+            background: #ef4444;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
+        .error-message.show {
+            display: block;
+        }
+
+        /* Footer */
         footer {
             background: #0f172a;
             color: white;
-            padding: 40px 0;
-            text-align: center;
+            padding: 40px 0 20px;
+            margin-top: 80px;
         }
 
-        footer a {
+        .footer-content {
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        .footer-content a {
             color: #94a3b8;
             text-decoration: none;
             margin: 0 15px;
         }
 
-        footer a:hover {
+        .footer-content a:hover {
             color: #0EA5E9;
         }
 
         @media (max-width: 768px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-                gap: 30px;
+            .form-container {
+                padding: 30px 20px;
+            }
+
+            .form-container h1 {
+                font-size: 28px;
+            }
+
+            .contact-section {
+                margin-top: 100px;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html" class="logo">diKItalize</a>
+        <nav class="container">
+            <a href="index.html" class="logo">diKItalize.</a>
+            <a href="index.html" class="back-button">Zurück zur Startseite</a>
         </nav>
     </header>
 
-    <div class="contact-container">
-        <a href="index.html" class="back-link">← Zurück zur Startseite</a>
-        
-        <div class="contact-info">
-            <h1>Kontaktiere uns</h1>
-            <p>Hast du Fragen zu diKItalize? Wir helfen dir gerne weiter. Nutze das Kontaktformular oder kontaktiere uns direkt.</p>
-            
-            <div class="contact-details">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div>
-                        <h3>E-Mail</h3>
-                        <a href="mailto:info@dikitalize.de">info@dikitalize.de</a>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <div>
-                        <h3>Telefon</h3>
-                        <a href="tel:+4917624043211">+49 176 24043211</a>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div>
-                        <h3>Adresse</h3>
-                        <p style="color: #475569; margin: 0;">
-                            Nebelbeekenweg 10<br>
-                            34379 Calden<br>
-                            Deutschland
-                        </p>
-                    </div>
-                </div>
+    <section class="contact-section">
+        <div class="form-container">
+            <h1>Schreib uns eine Nachricht</h1>
+            <p class="subtitle">Wir melden uns innerhalb von 24 Stunden bei dir</p>
+
+            <div id="success-message" class="success-message">
+                ✓ Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.
             </div>
 
-            <div class="cal-cta">
-                <h3>Lieber direkt einen Termin buchen?</h3>
-                <p>Vereinbare jetzt deinen kostenlosen Beratungstermin</p>
-                <a href="https://cal.com/dikitalize/demo" class="cal-btn" target="_blank">Termin vereinbaren</a>
+            <div id="error-message" class="error-message">
+                ✗ Fehler beim Senden. Bitte versuche es erneut.
             </div>
-        </div>
 
-        <div class="contact-form">
-            <h2>Schreib uns eine Nachricht</h2>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key - HIER MUSST DU DEINEN KEY EINFÜGEN -->
+                <input type="hidden" name="access_key" value="a1033f73-272c-4f11-bb1e-857e6e26e113">
+                
+                <!-- Spam-Schutz -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                <!-- Redirect nach Erfolg (optional) -->
+                <input type="hidden" name="redirect" value="https://dikitalize.de/danke.html">
+
                 <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Dein Name">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">E-Mail *</label>
-                    <input type="email" id="email" name="email" required placeholder="max@beispiel.de">
+                    <label for="email">E-Mail <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="deine@email.de">
                 </div>
 
                 <div class="form-group">
                     <label for="phone">Telefon</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+49 123 456 7890">
+                    <input type="tel" id="phone" name="phone" placeholder="+49 123 456789">
                 </div>
 
                 <div class="form-group">
@@ -320,23 +280,64 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Nachricht *</label>
+                    <label for="message">Nachricht <span class="required">*</span></label>
                     <textarea id="message" name="message" required placeholder="Wie können wir dir helfen?"></textarea>
                 </div>
 
-                <button type="submit" class="submit-btn">Nachricht senden</button>
+                <button type="submit" class="submit-button">Nachricht senden</button>
             </form>
         </div>
-    </div>
+    </section>
 
     <footer>
-        <div>
-            <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutz</a>
-            <a href="agb.html">AGB</a>
-            <a href="kontakt.html">Kontakt</a>
+        <div class="container">
+            <div class="footer-content">
+                <p>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="agb.html">AGB</a>
+                </p>
+                <p style="margin-top: 20px;">&copy; 2025 diKItalize. Alle Rechte vorbehalten.</p>
+            </div>
         </div>
-        <p style="margin-top: 20px;">&copy; 2025 diKItalize. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    successMessage.classList.add('show');
+                    errorMessage.classList.remove('show');
+                    form.reset();
+                    
+                    // Nachricht nach 5 Sekunden ausblenden
+                    setTimeout(() => {
+                        successMessage.classList.remove('show');
+                    }, 5000);
+                } else {
+                    errorMessage.classList.add('show');
+                    successMessage.classList.remove('show');
+                }
+            } catch (error) {
+                errorMessage.classList.add('show');
+                successMessage.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>
