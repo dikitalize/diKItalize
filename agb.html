@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allgemeine Geschäftsbedingungen - diKItalize</title>
+    <title>AGB - diKItalize</title>
     <style>
         * {
             margin: 0;
@@ -12,253 +13,342 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #1e293b;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
         }
 
         header {
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            background: rgba(255, 255, 255, 0.95);
+            padding: 25px 0;
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            border-bottom: 1px solid #e8e8e8;
         }
 
         .logo {
-            font-size: 28px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-decoration: none;
-        }
-
-        .legal-page {
-            max-width: 800px;
-            margin: 150px auto 80px;
-            padding: 0 20px;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 30px;
-            color: #0EA5E9;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .legal-page h1 {
-            font-size: 42px;
-            margin-bottom: 30px;
-            color: #1e293b;
-        }
-
-        .legal-page h2 {
             font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 80px 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
             margin-top: 40px;
             margin-bottom: 20px;
-            color: #1e293b;
+            color: #4A90E2;
         }
 
-        .legal-page h3 {
+        h3 {
             font-size: 20px;
+            font-weight: 600;
             margin-top: 30px;
             margin-bottom: 15px;
-            color: #1e293b;
+            color: #1a1a1a;
         }
 
-        .legal-page p {
-            color: #475569;
-            line-height: 1.8;
+        p {
+            font-size: 16px;
+            color: #666;
             margin-bottom: 15px;
         }
 
-        .legal-page ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-            color: #475569;
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
         }
 
-        .legal-page li {
+        li {
+            font-size: 16px;
+            color: #666;
             margin-bottom: 8px;
         }
 
-        .legal-page a {
-            color: #0EA5E9;
-            text-decoration: none;
-        }
-
-        .legal-page a:hover {
-            text-decoration: underline;
+        strong {
+            color: #1a1a1a;
         }
 
         footer {
-            background: #0f172a;
-            color: white;
             padding: 40px 0;
+            background: #f8f9fa;
             text-align: center;
+            margin-top: 60px;
         }
 
         footer a {
-            color: #94a3b8;
+            color: #4A90E2;
             text-decoration: none;
             margin: 0 15px;
         }
 
         footer a:hover {
-            color: #0EA5E9;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="container">
             <a href="index.html" class="logo">diKItalize</a>
-        </nav>
+        </div>
     </header>
 
-    <div class="legal-page">
-        <a href="index.html" class="back-link">← Zurück zur Startseite</a>
-        
-        <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+    <div class="content">
+        <div class="container">
+            <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
 
-        <h2>§ 1 Geltungsbereich</h2>
-        <p>
-            Diese Allgemeinen Geschäftsbedingungen (nachfolgend "AGB") gelten für alle Verträge zwischen 
-            diKItalize, Daniel Schmuch (nachfolgend "Anbieter") und dem Kunden über die Nutzung der KI-Telefon-Assistenten-Dienstleistungen 
-            von diKItalize.
-        </p>
+            <h2>§ 1 Geltungsbereich</h2>
+            <p>
+                (1) Diese Allgemeinen Geschäftsbedingungen (nachfolgend "AGB") gelten für alle Verträge zwischen 
+                diKItalize Einzelunternehmen, Daniel Schmuch, Nebelbeekenweg 10, 34379 Calden (nachfolgend "Anbieter") 
+                und seinen Kunden (nachfolgend "Auftraggeber") über die Erbringung von Dienstleistungen im Bereich 
+                KI-Telefonie und Prozessautomatisierung.
+            </p>
+            <p>
+                (2) Abweichende, entgegenstehende oder ergänzende Allgemeine Geschäftsbedingungen des Auftraggebers 
+                werden nur dann und insoweit Vertragsbestandteil, als der Anbieter ihrer Geltung ausdrücklich 
+                schriftlich zugestimmt hat.
+            </p>
+            <p>
+                (3) Diese AGB gelten auch für alle zukünftigen Geschäftsbeziehungen, auch wenn sie nicht nochmals 
+                ausdrücklich vereinbart werden.
+            </p>
 
-        <h2>§ 2 Vertragsgegenstand</h2>
-        <p>
-            Der Anbieter stellt dem Kunden einen KI-gestützten Telefon-Assistenten zur Verfügung, der folgende Leistungen umfasst:
-        </p>
-        <ul>
-            <li>Inbound-Telefonie: Annahme und Bearbeitung eingehender Kundenanrufe</li>
-            <li>Outbound-Telefonie: Automatisierte Lead-Qualifizierung und Terminvereinbarung</li>
-            <li>Integration mit bestehenden CRM- und Kalendersystemen</li>
-            <li>Dashboard zur Überwachung und Analyse der Anrufe</li>
-        </ul>
+            <h2>§ 2 Vertragsschluss</h2>
+            <p>
+                (1) Die Darstellung der Leistungen auf der Website stellt kein rechtlich bindendes Angebot dar, 
+                sondern eine unverbindliche Aufforderung an den Kunden, Leistungen anzufragen.
+            </p>
+            <p>
+                (2) Der Vertrag kommt durch ein individuelles Angebot des Anbieters und dessen Annahme durch den 
+                Auftraggeber zustande. Dies kann schriftlich, per E-Mail oder durch konkludentes Handeln geschehen.
+            </p>
+            <p>
+                (3) Der Vertragstext wird vom Anbieter nicht gespeichert. Der Auftraggeber erhält eine Auftrags- 
+                bzw. Vertragsbestätigung per E-Mail.
+            </p>
 
-        <h2>§ 3 Vertragsschluss</h2>
-        <p>
-            Der Vertragsschluss erfolgt durch die Buchung eines Termins und anschließende schriftliche Bestätigung 
-            durch den Anbieter. Mit der Bestätigung kommt ein verbindlicher Vertrag zustande.
-        </p>
+            <h2>§ 3 Leistungsumfang</h2>
+            <p>
+                (1) Der Anbieter erbringt Dienstleistungen im Bereich KI-gestützter Telefonie (Inbound und Outbound) 
+                sowie Prozessautomatisierung. Der konkrete Leistungsumfang wird in einem individuellen Angebot bzw. 
+                Projektvertrag festgelegt.
+            </p>
+            <p>
+                (2) Der Anbieter schuldet die Erbringung der vereinbarten Dienstleistung nach dem aktuellen Stand 
+                der Technik. Eine bestimmte Erfolgsgarantie wird nicht übernommen, sofern nicht ausdrücklich 
+                schriftlich vereinbart.
+            </p>
+            <p>
+                (3) Der Anbieter ist berechtigt, für die Leistungserbringung qualifizierte Subunternehmer einzusetzen.
+            </p>
+            <p>
+                (4) Änderungen und Erweiterungen des Leistungsumfangs bedürfen der schriftlichen Vereinbarung.
+            </p>
 
-        <h2>§ 4 Leistungsumfang</h2>
-        <h3>4.1 Verfügbarkeit</h3>
-        <p>
-            Der Anbieter bemüht sich um eine Verfügbarkeit der Dienste von 99,5% im Jahresmittel. 
-            Ausgenommen sind Wartungsarbeiten, die nach Möglichkeit angekündigt werden.
-        </p>
+            <h2>§ 4 Mitwirkungspflichten des Auftraggebers</h2>
+            <p>
+                (1) Der Auftraggeber verpflichtet sich, alle für die Leistungserbringung erforderlichen Informationen, 
+                Daten und Unterlagen vollständig und rechtzeitig zur Verfügung zu stellen.
+            </p>
+            <p>
+                (2) Der Auftraggeber stellt sicher, dass alle notwendigen technischen Voraussetzungen (z.B. 
+                Systemzugänge, API-Schnittstellen, CRM-Integration) für die Implementierung der Lösung vorhanden sind.
+            </p>
+            <p>
+                (3) Verzögerungen aufgrund unzureichender oder verspäteter Mitwirkung des Auftraggebers gehen nicht 
+                zu Lasten des Anbieters und können zu einer Anpassung von Terminen und Vergütung führen.
+            </p>
 
-        <h3>4.2 Support</h3>
-        <p>
-            Der Anbieter bietet technischen Support per E-Mail und Telefon während der Geschäftszeiten 
-            (Montag bis Freitag, 9:00 bis 18:00 Uhr).
-        </p>
+            <h2>§ 5 Preise und Zahlungsbedingungen</h2>
+            <p>
+                (1) Es gelten die im individuellen Angebot vereinbarten Preise. Alle Preise verstehen sich zuzüglich 
+                der gesetzlichen Mehrwertsteuer.
+            </p>
+            <p>
+                (2) Sofern nicht anders vereinbart, sind Rechnungen innerhalb von 14 Tagen nach Rechnungsdatum ohne 
+                Abzug zur Zahlung fällig.
+            </p>
+            <p>
+                (3) Bei wiederkehrenden Leistungen (z.B. monatliche Service-Gebühren) erfolgt die Abrechnung im 
+                Voraus zum Beginn des jeweiligen Abrechnungszeitraums.
+            </p>
+            <p>
+                (4) Bei Zahlungsverzug ist der Anbieter berechtigt, Verzugszinsen in Höhe von 9 Prozentpunkten über 
+                dem Basiszinssatz zu berechnen. Die Geltendmachung eines höheren Verzugsschadens bleibt vorbehalten.
+            </p>
 
-        <h2>§ 5 Preise und Zahlungsbedingungen</h2>
-        <p>
-            Die Preise richten sich nach dem jeweils aktuellen Preismodell und werden im Angebot individuell 
-            vereinbart. Alle Preise verstehen sich zzgl. der gesetzlichen Umsatzsteuer.
-        </p>
-        <p>
-            Die Rechnungsstellung erfolgt monatlich im Voraus. Die Zahlung ist innerhalb von 14 Tagen nach 
-            Rechnungsstellung fällig.
-        </p>
+            <h2>§ 6 Laufzeit und Kündigung</h2>
+            <p>
+                (1) Die Vertragslaufzeit richtet sich nach der individuellen Vereinbarung.
+            </p>
+            <p>
+                (2) Bei Verträgen mit wiederkehrenden Leistungen beträgt die Mindestlaufzeit 12 Monate, sofern nicht 
+                anders vereinbart. Der Vertrag verlängert sich automatisch um jeweils weitere 12 Monate, wenn er nicht 
+                mit einer Frist von 3 Monaten zum Ende der Laufzeit gekündigt wird.
+            </p>
+            <p>
+                (3) Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt. Ein wichtiger 
+                Grund liegt insbesondere vor bei:
+            </p>
+            <ul>
+                <li>Zahlungsverzug von mehr als 30 Tagen</li>
+                <li>Verletzung wesentlicher vertraglicher Pflichten</li>
+                <li>Insolvenz oder drohender Zahlungsunfähigkeit einer Vertragspartei</li>
+            </ul>
+            <p>
+                (4) Kündigungen bedürfen der Schriftform oder erfolgen per E-Mail.
+            </p>
 
-        <h2>§ 6 Vertragslaufzeit und Kündigung</h2>
-        <p>
-            Die Mindestvertragslaufzeit beträgt 12 Monate. Der Vertrag verlängert sich automatisch um weitere 
-            12 Monate, sofern nicht mit einer Frist von 3 Monaten zum Ende der Vertragslaufzeit gekündigt wird.
-        </p>
-        <p>
-            Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt.
-        </p>
+            <h2>§ 7 Gewährleistung</h2>
+            <p>
+                (1) Der Anbieter gewährleistet, dass die erbrachten Leistungen zum Zeitpunkt der Leistungserbringung 
+                den vertraglich vereinbarten Anforderungen entsprechen.
+            </p>
+            <p>
+                (2) Bei Mängeln der Leistung hat der Auftraggeber zunächst das Recht auf Nachbesserung. Der Anbieter 
+                ist berechtigt, nach eigener Wahl den Mangel zu beheben oder die Leistung neu zu erbringen.
+            </p>
+            <p>
+                (3) Schlägt die Nachbesserung nach angemessener Frist fehl, ist der Auftraggeber berechtigt, nach 
+                seiner Wahl Minderung der Vergütung zu verlangen oder vom Vertrag zurückzutreten.
+            </p>
+            <p>
+                (4) Mängelansprüche verjähren nach 12 Monaten ab Abnahme bzw. Leistungserbringung.
+            </p>
 
-        <h2>§ 7 Pflichten des Kunden</h2>
-        <p>Der Kunde verpflichtet sich:</p>
-        <ul>
-            <li>Die Dienste nicht für rechtswidrige Zwecke zu nutzen</li>
-            <li>Zugangs- und Authentifizierungsdaten geheim zu halten</li>
-            <li>Den Anbieter unverzüglich über Sicherheitsvorfälle zu informieren</li>
-            <li>Alle erforderlichen Informationen für die Konfiguration bereitzustellen</li>
-            <li>Die geltenden Datenschutzgesetze einzuhalten</li>
-        </ul>
+            <h2>§ 8 Haftung</h2>
+            <p>
+                (1) Der Anbieter haftet unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder 
+                der Gesundheit, die auf einer fahrlässigen oder vorsätzlichen Pflichtverletzung des Anbieters oder 
+                eines gesetzlichen Vertreters oder Erfüllungsgehilfen des Anbieters beruhen.
+            </p>
+            <p>
+                (2) Für sonstige Schäden haftet der Anbieter nur bei Verletzung wesentlicher Vertragspflichten 
+                (Kardinalpflichten). In diesem Fall ist die Haftung auf den vertragstypischen, vorhersehbaren Schaden 
+                begrenzt. Kardinalpflichten sind solche, deren Erfüllung die ordnungsgemäße Durchführung des Vertrages 
+                überhaupt erst ermöglicht und auf deren Einhaltung der Auftraggeber regelmäßig vertrauen darf.
+            </p>
+            <p>
+                (3) Die Haftung für mittelbare Schäden, Folgeschäden, entgangenen Gewinn und Vermögensschäden ist 
+                ausgeschlossen, soweit nicht zwingend gehaftet wird.
+            </p>
+            <p>
+                (4) Die vorstehenden Haftungsbeschränkungen gelten auch für die persönliche Haftung der Mitarbeiter, 
+                Vertreter und Erfüllungsgehilfen des Anbieters.
+            </p>
 
-        <h2>§ 8 Datenschutz und Datenverarbeitung</h2>
-        <p>
-            Die Verarbeitung personenbezogener Daten erfolgt gemäß der Datenschutz-Grundverordnung (DSGVO). 
-            Details regelt die separate Datenschutzerklärung und ggf. ein Auftragsverarbeitungsvertrag.
-        </p>
+            <h2>§ 9 Datenschutz und Vertraulichkeit</h2>
+            <p>
+                (1) Der Anbieter verpflichtet sich, alle datenschutzrechtlichen Bestimmungen, insbesondere die 
+                Datenschutz-Grundverordnung (DSGVO), einzuhalten.
+            </p>
+            <p>
+                (2) Sofern der Anbieter im Rahmen der Leistungserbringung personenbezogene Daten im Auftrag des 
+                Auftraggebers verarbeitet, wird ein separater Auftragsverarbeitungsvertrag (AVV) gemäß Art. 28 DSGVO 
+                geschlossen.
+            </p>
+            <p>
+                (3) Beide Vertragsparteien verpflichten sich, alle im Rahmen der Geschäftsbeziehung bekannt gewordenen 
+                Informationen, insbesondere Geschäfts- und Betriebsgeheimnisse, vertraulich zu behandeln. Diese 
+                Verpflichtung besteht auch nach Beendigung des Vertragsverhältnisses fort.
+            </p>
 
-        <h2>§ 9 Haftung</h2>
-        <p>
-            Der Anbieter haftet unbeschränkt für Vorsatz und grobe Fahrlässigkeit. Bei leichter Fahrlässigkeit 
-            haftet der Anbieter nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten). Die Haftung 
-            ist in diesem Fall auf den vertragstypischen, vorhersehbaren Schaden begrenzt.
-        </p>
+            <h2>§ 10 Nutzungsrechte</h2>
+            <p>
+                (1) Alle im Rahmen der Leistungserbringung erstellten Werke (insbesondere Software, Skripte, 
+                Konzepte, Dokumentationen) bleiben im Eigentum des Anbieters, soweit nicht ausdrücklich anders 
+                vereinbart.
+            </p>
+            <p>
+                (2) Der Auftraggeber erhält nach vollständiger Bezahlung ein einfaches, nicht ausschließliches, 
+                zeitlich und räumlich unbeschränktes Nutzungsrecht an den für ihn erstellten Werken für den 
+                vertraglich vereinbarten Zweck.
+            </p>
+            <p>
+                (3) Eine Weitergabe von Nutzungsrechten an Dritte bedarf der vorherigen schriftlichen Zustimmung 
+                des Anbieters.
+            </p>
 
-        <h2>§ 10 Geheimhaltung</h2>
-        <p>
-            Beide Parteien verpflichten sich, alle im Rahmen der Zusammenarbeit bekannt gewordenen vertraulichen 
-            Informationen geheim zu halten und nur für Vertragszwecke zu verwenden.
-        </p>
+            <h2>§ 11 Höhere Gewalt</h2>
+            <p>
+                Der Anbieter haftet nicht für die Unmöglichkeit der Leistung oder für Leistungsverzögerungen, 
+                soweit diese durch höhere Gewalt oder sonstige zum Zeitpunkt des Vertragsschlusses nicht vorhersehbare 
+                Ereignisse (z.B. Betriebsstörungen aller Art, Streik, behördliche Maßnahmen) verursacht worden sind, 
+                die der Anbieter nicht zu vertreten hat.
+            </p>
 
-        <h2>§ 11 Änderungen der AGB</h2>
-        <p>
-            Der Anbieter behält sich vor, diese AGB mit einer Ankündigungsfrist von 4 Wochen zu ändern. 
-            Widerspricht der Kunde nicht innerhalb von 4 Wochen nach Bekanntgabe, gelten die geänderten AGB 
-            als akzeptiert.
-        </p>
+            <h2>§ 12 Änderungen der AGB</h2>
+            <p>
+                (1) Der Anbieter behält sich vor, diese AGB jederzeit zu ändern.
+            </p>
+            <p>
+                (2) Die geänderten AGB werden dem Auftraggeber mindestens 6 Wochen vor ihrem Inkrafttreten per E-Mail 
+                zugesendet. Widerspricht der Auftraggeber der Geltung der neuen AGB nicht innerhalb von 6 Wochen nach 
+                Zugang, gelten die geänderten AGB als angenommen. Der Anbieter wird den Auftraggeber in der 
+                Benachrichtigung über die AGB-Änderung auf die Bedeutung dieser Sechswochenfrist besonders hinweisen.
+            </p>
 
-        <h2>§ 12 Schlussbestimmungen</h2>
-        <p>
-            Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. 
-            Gerichtsstand ist, soweit gesetzlich zulässig, der Sitz des Anbieters.
-        </p>
-        <p>
-            Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen 
-            Bestimmungen unberührt.
-        </p>
+            <h2>§ 13 Schlussbestimmungen</h2>
+            <p>
+                (1) Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.
+            </p>
+            <p>
+                (2) Ist der Auftraggeber Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches 
+                Sondervermögen, ist ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag der 
+                Geschäftssitz des Anbieters. Der Anbieter ist jedoch auch berechtigt, am allgemeinen Gerichtsstand 
+                des Auftraggebers zu klagen.
+            </p>
+            <p>
+                (3) Sollten einzelne Bestimmungen dieser AGB unwirksam oder undurchführbar sein oder werden, berührt 
+                dies die Wirksamkeit der übrigen Bestimmungen nicht. An die Stelle der unwirksamen oder undurchführbaren 
+                Bestimmung tritt diejenige wirksame und durchführbare Regelung, deren Wirkungen der wirtschaftlichen 
+                Zielsetzung am nächsten kommen, die die Vertragsparteien mit der unwirksamen bzw. undurchführbaren 
+                Bestimmung verfolgt haben.
+            </p>
 
-        <p style="margin-top: 60px; color: #94a3b8; font-size: 14px;">
-            Stand: Januar 2025
-        </p>
-
-        <p style="margin-top: 20px; font-size: 14px; color: #94a3b8;">
-            <strong>Wichtiger Hinweis:</strong> Stand: Oktober 2025
-        </p>
+            <p style="margin-top: 40px; font-size: 14px; color: #999;">
+                Stand: Oktober 2025
+            </p>
+        </div>
     </div>
 
     <footer>
-        <div>
+        <div class="container">
+            <a href="index.html">Startseite</a>
             <a href="impressum.html">Impressum</a>
             <a href="datenschutz.html">Datenschutz</a>
-            <a href="agb.html">AGB</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
-        <p style="margin-top: 20px;">&copy; 2025 diKItalize. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
