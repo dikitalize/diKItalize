@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -12,187 +13,165 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #1e293b;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
         }
 
         header {
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            background: rgba(255, 255, 255, 0.95);
+            padding: 25px 0;
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            border-bottom: 1px solid #e8e8e8;
         }
 
         .logo {
-            font-size: 28px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-decoration: none;
-        }
-
-        .legal-page {
-            max-width: 800px;
-            margin: 150px auto 80px;
-            padding: 0 20px;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 30px;
-            color: #0EA5E9;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .legal-page h1 {
-            font-size: 42px;
-            margin-bottom: 30px;
-            color: #1e293b;
-        }
-
-        .legal-page h2 {
             font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 80px 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
             margin-top: 40px;
             margin-bottom: 20px;
-            color: #1e293b;
+            color: #4A90E2;
         }
 
-        .legal-page p {
-            color: #475569;
-            line-height: 1.8;
+        p {
+            font-size: 16px;
+            color: #666;
             margin-bottom: 15px;
         }
 
-        .legal-page a {
-            color: #0EA5E9;
-            text-decoration: none;
-        }
-
-        .legal-page a:hover {
-            text-decoration: underline;
+        strong {
+            color: #1a1a1a;
         }
 
         footer {
-            background: #0f172a;
-            color: white;
             padding: 40px 0;
+            background: #f8f9fa;
             text-align: center;
+            margin-top: 60px;
         }
 
         footer a {
-            color: #94a3b8;
+            color: #4A90E2;
             text-decoration: none;
             margin: 0 15px;
         }
 
         footer a:hover {
-            color: #0EA5E9;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="container">
             <a href="index.html" class="logo">diKItalize</a>
-        </nav>
+        </div>
     </header>
 
-    <div class="legal-page">
-        <a href="index.html" class="back-link">← Zurück zur Startseite</a>
-        
-        <h1>Impressum</h1>
+    <div class="content">
+        <div class="container">
+            <h1>Impressum</h1>
 
-        <h2>Angaben gemäß § 5 TMG</h2>
-        <p>
-            diKItalize<br>
-            Daniel Schmuch<br>
-            Nebelbeekenweg 10<br>
-            34379 Calden
-        </p>
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p><strong>diKItalize Einzelunternehmen</strong></p>
+            <p>
+                Daniel Schmuch<br>
+                Nebelbeekenweg 10<br>
+                34379 Calden<br>
+                Deutschland
+            </p>
 
-        <h2>Kontakt</h2>
-        <p>
-            E-Mail: <a href="mailto:info@dikitalize.de">info@dikitalize.de</a>
-        </p>
+            <h2>Kontakt</h2>
+            <p>
+                Telefon: 0176 24043211<br>
+                E-Mail: info@dikitalize.de
+            </p>
 
-        <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
-        <p>
-            Berufsbezeichnung: Softwaredienstleistungen<br>
-            Verliehen in: Deutschland
-        </p>
+            <h2>EU-Streitschlichtung</h2>
+            <p>
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+                <a href="https://ec.europa.eu/consumers/odr/" target="_blank" style="color: #4A90E2;">https://ec.europa.eu/consumers/odr/</a>
+            </p>
+            <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
 
-        <h2>Redaktionell verantwortlich</h2>
-        <p>
-            Daniel Schmuch<br>
-            Nebelbeekenweg 10<br>
-            34379 Calden
-        </p>
+            <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+            <p>
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer 
+                Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
 
-        <h2>EU-Streitschlichtung</h2>
-        <p>
-            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-            <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a><br>
-            Unsere E-Mail-Adresse finden Sie oben im Impressum.
-        </p>
+            <h2>Haftung für Inhalte</h2>
+            <p>
+                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den 
+                allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht 
+                verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen 
+                zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+            </p>
+            <p>
+                Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen 
+                Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der 
+                Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden 
+                Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+            </p>
 
-        <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
-        <p>
-            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer 
-            Verbraucherschlichtungsstelle teilzunehmen.
-        </p>
+            <h2>Haftung für Links</h2>
+            <p>
+                Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. 
+                Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der 
+                verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+            </p>
 
-        <h2>Haftung für Inhalte</h2>
-        <p>
-            Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den 
-            allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht 
-            verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen 
-            zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-        </p>
-
-        <h2>Haftung für Links</h2>
-        <p>
-            Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. 
-            Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten 
-            Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
-        </p>
-
-        <h2>Urheberrecht</h2>
-        <p>
-            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen 
-            Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der 
-            Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-        </p>
+            <h2>Urheberrecht</h2>
+            <p>
+                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen 
+                Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der 
+                Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            </p>
+        </div>
     </div>
 
     <footer>
-        <div>
-            <a href="impressum.html">Impressum</a>
+        <div class="container">
+            <a href="index.html">Startseite</a>
             <a href="datenschutz.html">Datenschutz</a>
             <a href="agb.html">AGB</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
-        <p style="margin-top: 20px;">&copy; 2025 diKItalize. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
