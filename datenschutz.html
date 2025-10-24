@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -12,266 +13,335 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #1e293b;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
         }
 
         header {
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            background: rgba(255, 255, 255, 0.95);
+            padding: 25px 0;
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            border-bottom: 1px solid #e8e8e8;
         }
 
         .logo {
-            font-size: 28px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-decoration: none;
-        }
-
-        .legal-page {
-            max-width: 800px;
-            margin: 150px auto 80px;
-            padding: 0 20px;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 30px;
-            color: #0EA5E9;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .legal-page h1 {
-            font-size: 42px;
-            margin-bottom: 30px;
-            color: #1e293b;
-        }
-
-        .legal-page h2 {
             font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 80px 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
             margin-top: 40px;
             margin-bottom: 20px;
-            color: #1e293b;
+            color: #4A90E2;
         }
 
-        .legal-page h3 {
+        h3 {
             font-size: 20px;
+            font-weight: 600;
             margin-top: 30px;
             margin-bottom: 15px;
-            color: #1e293b;
+            color: #1a1a1a;
         }
 
-        .legal-page p {
-            color: #475569;
-            line-height: 1.8;
+        p {
+            font-size: 16px;
+            color: #666;
             margin-bottom: 15px;
         }
 
-        .legal-page ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-            color: #475569;
+        ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
         }
 
-        .legal-page li {
+        li {
+            font-size: 16px;
+            color: #666;
             margin-bottom: 8px;
         }
 
-        .legal-page a {
-            color: #0EA5E9;
+        strong {
+            color: #1a1a1a;
+        }
+
+        a {
+            color: #4A90E2;
             text-decoration: none;
         }
 
-        .legal-page a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         footer {
-            background: #0f172a;
-            color: white;
             padding: 40px 0;
+            background: #f8f9fa;
             text-align: center;
+            margin-top: 60px;
         }
 
         footer a {
-            color: #94a3b8;
+            color: #4A90E2;
             text-decoration: none;
             margin: 0 15px;
         }
 
-        footer a:hover {
-            color: #0EA5E9;
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="container">
             <a href="index.html" class="logo">diKItalize</a>
-        </nav>
+        </div>
     </header>
 
-    <div class="legal-page">
-        <a href="index.html" class="back-link">← Zurück zur Startseite</a>
-        
-        <h1>Datenschutzerklärung</h1>
+    <div class="content">
+        <div class="container">
+            <h1>Datenschutzerklärung</h1>
 
-        <h2>1. Datenschutz auf einen Blick</h2>
-        
-        <h3>Allgemeine Hinweise</h3>
-        <p>
-            Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten 
-            passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie 
-            persönlich identifiziert werden können.
-        </p>
+            <h2>1. Datenschutz auf einen Blick</h2>
+            
+            <h3>Allgemeine Hinweise</h3>
+            <p>
+                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten 
+                passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie 
+                persönlich identifiziert werden können.
+            </p>
 
-        <h3>Datenerfassung auf dieser Website</h3>
-        <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
-        <p>
-            Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten 
-            können Sie dem Impressum dieser Website entnehmen.
-        </p>
+            <h3>Datenerfassung auf dieser Website</h3>
+            <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
+            <p>
+                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten 
+                können Sie dem Impressum dieser Website entnehmen.
+            </p>
 
-        <p><strong>Wie erfassen wir Ihre Daten?</strong></p>
-        <p>
-            Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um 
-            Daten handeln, die Sie in ein Kontaktformular eingeben.
-        </p>
+            <p><strong>Wie erfassen wir Ihre Daten?</strong></p>
+            <p>
+                Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. 
+                um Daten handeln, die Sie telefonisch oder per E-Mail an uns übermitteln.
+            </p>
+            <p>
+                Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere 
+                IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder 
+                Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+            </p>
 
-        <h2>2. Hosting</h2>
-        <h3>GitHub Pages & Cloudflare</h3>
-        <p>
-            Wir hosten unsere Website bei GitHub Pages mit Cloudflare als CDN. Anbieter ist die GitHub Inc., 88 Colin P. Kelly Jr. St., 
-            San Francisco, CA 94107, USA und Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA.
-        </p>
-        <p>
-            GitHub und Cloudflare verfügen über eine Zertifizierung nach dem EU-US-Data Privacy Framework (DPF). 
-            Details hierzu finden Sie unter: 
-            <a href="https://www.dataprivacyframework.gov/" target="_blank">https://www.dataprivacyframework.gov/</a>
-        </p>
+            <h2>2. Hosting und Content Delivery Network</h2>
+            
+            <h3>GitHub Pages</h3>
+            <p>
+                Diese Website wird gehostet auf GitHub Pages, einem Service von GitHub Inc., 88 Colin P Kelly Jr St, 
+                San Francisco, CA 94107, USA.
+            </p>
+            <p>
+                Beim Besuch dieser Website erfasst GitHub automatisch und speichert in Server-Log-Dateien 
+                Informationen, die Ihr Browser automatisch übermittelt. Dies sind:
+            </p>
+            <ul>
+                <li>IP-Adresse des zugreifenden Rechners</li>
+                <li>Datum und Uhrzeit der Anforderung</li>
+                <li>Zeitzonendifferenz zur Greenwich Mean Time (GMT)</li>
+                <li>Inhalt der Anforderung (konkrete Seite)</li>
+                <li>Zugriffsstatus/HTTP-Statuscode</li>
+                <li>jeweils übertragene Datenmenge</li>
+                <li>Website, von der die Anforderung kommt</li>
+                <li>Browser und Betriebssystem</li>
+            </ul>
+            <p>
+                Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aus unserem berechtigten 
+                Interesse an der Verbesserung der Stabilität und Funktionalität unserer Website.
+            </p>
+            <p>
+                Weitere Informationen zu GitHub Pages und Datenschutz: 
+                <a href="https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement" target="_blank">
+                    GitHub Privacy Statement
+                </a>
+            </p>
 
-        <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
-        
-        <h3>Datenschutz</h3>
-        <p>
-            Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre 
-            personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie 
-            dieser Datenschutzerklärung.
-        </p>
+            <h3>Cloudflare</h3>
+            <p>
+                Wir nutzen Cloudflare für das Content Delivery Network (CDN) und zur Absicherung unserer Website. 
+                Anbieter ist die Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA.
+            </p>
+            <p>
+                Cloudflare verarbeitet beim Besuch dieser Website Daten wie z.B. Ihre IP-Adresse, um die Website 
+                schneller und sicherer bereitzustellen. Dabei kann es auch zu einer Übermittlung von personenbezogenen 
+                Daten in die USA kommen.
+            </p>
+            <p>
+                Die Verwendung von Cloudflare beruht auf unserem berechtigten Interesse an einer möglichst fehlerfreien 
+                und sicheren Bereitstellung unseres Webangebotes (Art. 6 Abs. 1 lit. f DSGVO).
+            </p>
+            <p>
+                Cloudflare ist Empfänger Ihrer personenbezogenen Daten und als Auftragsverarbeiter für uns tätig. 
+                Die entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 lit. f DSGVO, selbst kein 
+                Content Delivery Network zu betreiben.
+            </p>
+            <p>
+                Weitere Informationen zu Cloudflare und Datenschutz: 
+                <a href="https://www.cloudflare.com/de-de/privacypolicy/" target="_blank">
+                    Cloudflare Privacy Policy
+                </a>
+            </p>
 
-        <h3>Hinweis zur verantwortlichen Stelle</h3>
-        <p>
-            Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
-        </p>
-        <p>
-            diKItalize<br>
-            Daniel Schmuch<br>
-            Nebelbeekenweg 10<br>
-            34379 Calden<br><br>
-            E-Mail: <a href="mailto:info@dikitalize.de">info@dikitalize.de</a>
-        </p>
+            <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
+            
+            <h3>Datenschutz</h3>
+            <p>
+                Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre 
+                personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie 
+                dieser Datenschutzerklärung.
+            </p>
+            <p>
+                Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene 
+                Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende 
+                Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, 
+                wie und zu welchem Zweck das geschieht.
+            </p>
 
-        <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
-        <p>
-            Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine 
-            bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten 
-            Datenverarbeitung bleibt vom Widerruf unberührt.
-        </p>
+            <h3>Hinweis zur verantwortlichen Stelle</h3>
+            <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+            <p>
+                <strong>diKItalize Einzelunternehmen</strong><br>
+                Daniel Schmuch<br>
+                Nebelbeekenweg 10<br>
+                34379 Calden<br>
+                Deutschland
+            </p>
+            <p>
+                Telefon: 0176 24043211<br>
+                E-Mail: info@dikitalize.de
+            </p>
+            <p>
+                Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen 
+                über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) 
+                entscheidet.
+            </p>
 
-        <h3>Recht auf Datenübertragbarkeit</h3>
-        <p>
-            Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags 
-            automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format 
-            aushändigen zu lassen.
-        </p>
+            <h3>Speicherdauer</h3>
+            <p>
+                Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben 
+                Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein 
+                berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, 
+                werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung 
+                Ihrer personenbezogenen Daten haben.
+            </p>
 
-        <h3>Auskunft, Löschung und Berichtigung</h3>
-        <p>
-            Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche 
-            Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck 
-            der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten.
-        </p>
+            <h3>Hinweis zur Datenweitergabe in die USA und sonstige Drittstaaten</h3>
+            <p>
+                Auf unserer Website sind unter anderem Tools von Unternehmen mit Sitz in den USA oder sonstigen 
+                datenschutzrechtlich nicht sicheren Drittstaaten eingebunden (GitHub, Cloudflare). Wenn diese Tools 
+                aktiv sind, können Ihre personenbezogenen Daten in diese Drittstaaten übertragen und dort verarbeitet werden.
+            </p>
 
-        <h2>4. Datenerfassung auf dieser Website</h2>
-        
-        <h3>Server-Log-Dateien</h3>
-        <p>
-            Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, 
-            die Ihr Browser automatisch an uns übermittelt:
-        </p>
-        <ul>
-            <li>Browsertyp und Browserversion</li>
-            <li>Verwendetes Betriebssystem</li>
-            <li>Referrer URL</li>
-            <li>Hostname des zugreifenden Rechners</li>
-            <li>Uhrzeit der Serveranfrage</li>
-            <li>IP-Adresse</li>
-        </ul>
+            <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+            <p>
+                Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine 
+                bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten 
+                Datenverarbeitung bleibt vom Widerruf unberührt.
+            </p>
 
-        <h3>Kontaktformular</h3>
-        <p>
-            Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular 
-            inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall 
-            von Anschlussfragen bei uns gespeichert.
-        </p>
+            <h3>Auskunft, Löschung und Berichtigung</h3>
+            <p>
+                Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche 
+                Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck 
+                der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu 
+                weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.
+            </p>
 
-        <h3>Cal.com Integration</h3>
-        <p>
-            Wir verwenden Cal.com für Terminbuchungen. Wenn Sie einen Termin buchen, werden Ihre Daten (Name, 
-            E-Mail, Telefonnummer) an Cal.com übermittelt und dort verarbeitet. Weitere Informationen finden Sie 
-            in der Datenschutzerklärung von Cal.com: 
-            <a href="https://cal.com/privacy" target="_blank">https://cal.com/privacy</a>
-        </p>
+            <h3>Recht auf Datenübertragbarkeit</h3>
+            <p>
+                Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags 
+                automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format 
+                aushändigen zu lassen.
+            </p>
 
-        <h2>5. Ihre Rechte</h2>
-        <p>Sie haben folgende Rechte:</p>
-        <ul>
-            <li>Recht auf Auskunft über Ihre gespeicherten Daten</li>
-            <li>Recht auf Berichtigung unrichtiger Daten</li>
-            <li>Recht auf Löschung Ihrer Daten</li>
-            <li>Recht auf Einschränkung der Datenverarbeitung</li>
-            <li>Recht auf Datenübertragbarkeit</li>
-            <li>Widerspruchsrecht gegen die Datenverarbeitung</li>
-            <li>Beschwerderecht bei einer Aufsichtsbehörde</li>
-        </ul>
+            <h3>Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+            <p>
+                Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer 
+                Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes 
+                oder des Orts des mutmaßlichen Verstoßes zu.
+            </p>
 
-        <p style="margin-top: 40px; font-size: 14px; color: #94a3b8;">
-            <strong>Hinweis:</strong> Stand: Oktober 2025
-        </p>
+            <h2>4. Datenerfassung auf dieser Website</h2>
+            
+            <h3>Server-Log-Dateien</h3>
+            <p>
+                Der Provider der Seiten (GitHub Pages) erhebt und speichert automatisch Informationen in so genannten 
+                Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+            </p>
+            <ul>
+                <li>Browsertyp und Browserversion</li>
+                <li>verwendetes Betriebssystem</li>
+                <li>Referrer URL</li>
+                <li>Hostname des zugreifenden Rechners</li>
+                <li>Uhrzeit der Serveranfrage</li>
+                <li>IP-Adresse</li>
+            </ul>
+            <p>
+                Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser 
+                Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes 
+                Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website.
+            </p>
+
+            <h3>Kontaktaufnahme</h3>
+            <p>
+                Wenn Sie uns per Telefon oder E-Mail kontaktieren, wird Ihre Anfrage inklusive aller daraus 
+                hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei 
+                uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+            </p>
+            <p>
+                Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage 
+                mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen 
+                erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an 
+                der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO).
+            </p>
+
+            <p style="margin-top: 40px; font-size: 14px; color: #999;">
+                Stand: Oktober 2025
+            </p>
+        </div>
     </div>
 
     <footer>
-        <div>
+        <div class="container">
+            <a href="index.html">Startseite</a>
             <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutz</a>
             <a href="agb.html">AGB</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
-        <p style="margin-top: 20px;">&copy; 2025 diKItalize. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
